@@ -1,47 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  color: aquamarine;
-}
-
-.app {
+p {
+  color: red;
+  font-size: 1rem;
+  letter-spacing: 16px;
+  word-spacing: 20px;
   text-align: center;
+  text-shadow: 5px 5px blue;
 }
 
-.app-logo {
-  height: 40vmin;
-  pointer-events: none;
-  animation: app-logo-spin infinite 20s linear;
+p:first-letter{
+  /* font-size: 60px; */
 }
 
-.app-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.orange {
+  color: green;
 }
 
-.app-link {
-  color: #d32f2f;
+#apple {
+  color: blue;
 }
 
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.active {
+  font-weight: bold;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+ul > li:nth-child(2) {
+  color: yellow;
+  font-weight: bold;
+}
+
+ul > li:first-child {
+  color: red;
+  font-style: italic;
+}
+
+
+ul > li:last-child {
+  /* font-size: 25px; */
+}
+
+.active.highlight {
+  background-color: yellow ;
+}
+
+li[class~="highlight"] {
+  text-transform: uppercase;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+ul > li:not(:first-child) {
+  border-right: 6px solid #000;
+  
+}
+
+li {
+  list-style-type: decimal;
+}
+
+img {
+  width: 120px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.google {
+  text-decoration: none ;
+  color: black;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:focus {
+  color: yellow;
+  outline: none;
+}
+.box {
+  height: 150px;
+  max-width: 150px;
+  width: 100%;
+  /* display: inline-block; */
+  float: left;
+  margin: 0 auto;
+  overflow: auto ;
+}
+
+.box-red {
+  background-color: red;
+  border:  2px dotted black;
+}
+
+.box-green {
+  background-color: green;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.box-yellow {
+  background-color: yellow;
+  border-right: 3px solid blue;
 }
