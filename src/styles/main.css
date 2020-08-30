@@ -1,47 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+.form-login {
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 400px;
+  border: 1px solid grey;
+  font-size: 16px;
+  padding: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  color: aquamarine;
+.form-control {
+  position: relative;
 }
 
-.app {
-  text-align: center;
+.form-control input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 2px;
+  font-size: 16px;
+  border: 1px solid #eff2fb;
 }
 
-.app-logo {
-  height: 40vmin;
-  pointer-events: none;
-  animation: app-logo-spin infinite 20s linear;
+.form-control input:focus + label {
+  display: block;
 }
 
-.app-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-control label {
+  display: none;
+  position: absolute;
+  top: -10px;
+  width: max-content;
+  left: 10px;
+  background-color: white;
+  padding: 0 5px;
+  color: blue;
 }
 
-.app-link {
-  color: #d32f2f;
+.form-actions {
+  padding-top: 15px;
+  text-align: right;
 }
 
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.button-submit {
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #fff;
+  background-color: blue;
+  border: none;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
